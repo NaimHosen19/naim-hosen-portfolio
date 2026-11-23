@@ -1,439 +1,330 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Naim Hosen | Fiber, Network Operations & IT Portfolio</title>
-<meta name="description" content="Professional portfolio of Naim Hosen — fiber transmission, network operations, implementation, IT support and software engineering learning.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#10222B">
-<script src="./vendor/react.js"></script>
-<script src="./vendor/react-dom.js"></script>
-<script src="./support.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10222B">
+  <title>Naim Hosen | Telecom & Networking Professional | CSE</title>
+  <meta name="description" content="Official portfolio of Naim Hosen, a telecom and networking professional with nearly 10 years of experience in fiber transmission and network operations, and a CSE student interested in software development and data science.">
+  <meta name="author" content="Naim Hosen">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://naimhosen19.github.io/naim-hosen-portfolio/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Naim Hosen">
+  <meta property="og:title" content="Naim Hosen | Telecom & Networking Professional">
+  <meta property="og:description" content="Telecom and networking professional, CSE student, and software development and data science enthusiast.">
+  <meta property="og:url" content="https://naimhosen19.github.io/naim-hosen-portfolio/">
+  <meta property="og:image" content="https://naimhosen19.github.io/naim-hosen-portfolio/assets/naim-hosen-profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Naim Hosen | Professional Portfolio">
+  <meta name="twitter:description" content="Telecom & Networking Professional | CSE | Software Development | Data Science">
+  <meta name="twitter:image" content="https://naimhosen19.github.io/naim-hosen-portfolio/assets/naim-hosen-profile.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Naim Hosen",
+    "url": "https://naimhosen19.github.io/naim-hosen-portfolio/",
+    "image": "https://naimhosen19.github.io/naim-hosen-portfolio/assets/naim-hosen-profile.jpg",
+    "jobTitle": "Team Leader, Implementation and Operation",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Fiber@home Limited"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Port City International University"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chattogram",
+      "addressCountry": "BD"
+    },
+    "email": "mailto:naimhosen85@gmail.com",
+    "sameAs": [
+      "https://github.com/naimhosen19",
+      "https://www.facebook.com/share/1FTcwghkBi/"
+    ],
+    "knowsAbout": [
+      "Fiber Optic Networking",
+      "Fiber Transmission",
+      "DWDM",
+      "Network Operations",
+      "Network Engineering",
+      "Software Development",
+      "Python",
+      "Data Analysis",
+      "Machine Learning"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{--ink:#10222B;--teal:#0B6670;--muted:#4A5D66;--paper:#F4F6F5;--line:#C5D0D4;--gold:#F5B700;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif}
+    a{color:var(--teal)}
+    a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+    .wrap{width:min(1160px,calc(100% - 48px));margin-inline:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(244,246,245,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(197,208,212,.7)}
+    .header-inner{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);font:600 20px "Space Grotesk",sans-serif;white-space:nowrap}
+    .profile-logo{width:52px;height:52px;object-fit:cover;object-position:center 28%;border-radius:50%;border:2px solid var(--gold);box-shadow:0 4px 14px #10222b22}
+    .site-nav{display:flex;align-items:center;gap:22px}
+    .site-nav a{color:var(--ink);font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap}
+    .site-nav a:hover,.site-nav a[aria-current=location]{color:var(--teal);text-decoration:underline;text-underline-offset:6px}
+    .hero{padding:76px 0 88px}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(280px,.7fr);gap:56px;align-items:center}
+    .eyebrow,.kicker{font:500 12px/1.6 "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+    h1,h2,h3,h4{font-family:"Space Grotesk",sans-serif;line-height:1.15}
+    h1{font-size:clamp(48px,8vw,88px);letter-spacing:-.045em;margin:18px 0}
+    .headline{font:600 clamp(21px,2.7vw,29px)/1.3 "Space Grotesk",sans-serif;color:var(--teal);max-width:720px;margin:0 0 20px}
+    .intro{font-size:18px;max-width:66ch;color:#2C3F48}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border:1.5px solid var(--ink);border-radius:4px;background:var(--ink);color:var(--white);font-weight:700;text-decoration:none}
+    .button.secondary{background:transparent;color:var(--ink)}
+    .button:hover{transform:translateY(-2px);box-shadow:0 8px 20px #10222b1c}
+    .work-moment{position:relative;min-height:350px;border-radius:8px;overflow:hidden;background:var(--ink);box-shadow:0 18px 42px #10222b29}
+    .work-moment img{width:100%;height:100%;min-height:350px;position:absolute;inset:0;object-fit:cover;object-position:58% center}
+    .work-moment:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#07161fdb)}
+    .work-caption{position:absolute;z-index:1;bottom:20px;left:22px;color:white;font:500 11px "JetBrains Mono",monospace;letter-spacing:.1em}
+    .work-caption span{color:var(--gold)}
+    section.content-section{border-top:1px solid var(--line);padding:58px 0}
+    .section-grid{display:grid;grid-template-columns:220px minmax(0,1fr);gap:48px}
+    .section-title{margin:0;font:500 12px "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+    .section-heading{margin:0 0 24px;font-size:clamp(28px,4vw,38px)}
+    .stack{display:grid;gap:28px}
+    .panel{border-left:4px solid var(--gold);padding:4px 0 4px 22px}
+    .panel.teal{border-color:var(--teal)}.panel.dark{border-color:var(--ink)}
+    .panel h3{font-size:22px;margin:0 0 10px}.panel p{margin:0;color:#2C3F48}
+    .knowledge-grid,.skill-grid,.project-grid,.training-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+    .knowledge-grid h4,.skill-group h3{margin:0 0 6px;font-size:17px}
+    .knowledge-grid p,.skill-group p{margin:0;color:#2C3F48;font-size:15px}
+    .experience-list{display:grid;gap:48px}
+    .job-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+    .job-head h3{font-size:24px;margin:0}.company{color:var(--teal);font-weight:700;margin:5px 0}
+    .date{background:var(--gold);padding:3px 10px;border-radius:3px;font:12px "JetBrains Mono",monospace}
+    ul.details{padding-left:20px;margin:12px 0 0;color:#2C3F48}
+    ul.details li{padding:3px 0}
+    .skill-grid{gap:30px 36px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:10px 0 0;list-style:none}
+    .tags li{border:1px solid #9FB0B6;padding:5px 10px;border-radius:3px;font:12px "JetBrains Mono",monospace}
+    .project-grid{gap:18px}
+    .project{border:1.5px solid var(--ink);border-radius:5px;padding:22px;display:flex;flex-direction:column;gap:10px}
+    .project h3{font-size:21px;margin:0}.project p{margin:0;color:#2C3F48}
+    .status{align-self:flex-start;background:var(--gold);padding:2px 8px;border-radius:3px;font:11px "JetBrains Mono",monospace;text-transform:uppercase}
+    .status.planned{background:transparent;border:1px solid var(--ink)}
+    .edu-row{display:grid;grid-template-columns:130px minmax(0,1fr);gap:20px;padding:18px 0;border-bottom:1px solid #D7DFE1}
+    .edu-year{font:13px "JetBrains Mono",monospace;color:var(--muted)}
+    .edu-row h3{font-size:19px;margin:0}.edu-row p{margin:4px 0 0;color:#2C3F48}
+    .training-grid{margin-top:12px}.training{border:1.5px solid var(--ink);border-radius:4px;padding:18px}
+    .training h4{font-size:20px;margin:0}.training p{margin:5px 0;color:#2C3F48}
+    .contact{background:var(--gold);border-radius:6px;padding:clamp(26px,5vw,54px);display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:end}
+    .contact h2{font-size:clamp(30px,4.5vw,46px);margin:0 0 12px}.contact p{margin:0}
+    .contact-list{display:grid;gap:15px}.contact-list dt{font:11px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
+    .contact-list dd{margin:3px 0 0;font:600 19px "Space Grotesk",sans-serif;overflow-wrap:anywhere}
+    .contact-list a{color:var(--ink)}
+    footer{padding:24px 0 38px;color:var(--muted);font-size:13px}
+    .footer-inner{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
+    .scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--gold);z-index:50}
+    .back-to-top{position:fixed;right:18px;bottom:18px;z-index:40;border:0;border-radius:4px;padding:11px 14px;background:var(--ink);color:white;font-weight:700;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:.2s}
+    .back-to-top.visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+    @media(max-width:800px){
+      .wrap{width:min(100% - 36px,680px)}
+      .header-inner{align-items:flex-start;flex-direction:column;padding:14px 0 8px;gap:10px}
+      .site-nav{width:100%;overflow-x:auto;white-space:nowrap;gap:19px;padding:6px 0 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+      .site-nav::-webkit-scrollbar{display:none}
+      .hero{padding:48px 0 58px}.hero-grid{grid-template-columns:1fr;gap:30px}
+      .work-moment{min-height:260px}.work-moment img{min-height:260px}
+      .section-grid{grid-template-columns:1fr;gap:18px}
+      .contact{grid-template-columns:1fr}
+    }
+    @media(max-width:520px){
+      body{font-size:15px}.wrap{width:calc(100% - 32px)}
+      .knowledge-grid,.skill-grid,.project-grid,.training-grid{grid-template-columns:1fr}
+      .edu-row{grid-template-columns:1fr;gap:4px}
+      .intro{font-size:16px}
+      h1{font-size:54px}
+      .button{padding:0 16px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+    @media print{header,.scroll-progress,.back-to-top,.actions{display:none!important}body{background:white}}
+  </style>
 </head>
 <body>
-<x-dc>
-<helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
-<style>
-body{margin:0}
-a{color:#0B6670}
-a:hover{color:#10222B}
-a:focus-visible{outline:2px solid #0B6670;outline-offset:3px}
-</style>
-
-<style>
-html{scroll-behavior:smooth;scroll-padding-top:24px}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-a:focus-visible,button:focus-visible{outline:3px solid #0B6670!important;outline-offset:3px}
-
-.profile-logo{width:48px;height:48px;object-fit:cover;object-position:center 28%;border-radius:50%;border:2px solid #F5B700;box-shadow:0 4px 14px rgba(16,34,43,.16);transition:transform .35s ease,box-shadow .35s ease}
-.profile-logo:hover{transform:scale(1.08) rotate(-3deg);box-shadow:0 8px 22px rgba(16,34,43,.22)}
-.work-moment-wrap{position:relative;flex:1 1 340px;min-width:0;min-height:280px;align-self:stretch;overflow:hidden;border-radius:8px;background:#10222B;box-shadow:0 18px 42px rgba(16,34,43,.16);isolation:isolate;animation:photo-enter .9s cubic-bezier(.2,.8,.2,1) both}
-.work-moment-wrap::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(7,22,31,.82));z-index:1;pointer-events:none}
-.work-moment-image{display:block;width:100%;height:100%;min-height:340px;object-fit:cover;object-position:58% center;transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .6s ease;filter:saturate(.94)}
-.work-moment-wrap:hover .work-moment-image{transform:scale(1.045);filter:saturate(1.08)}
-.work-moment-caption{position:absolute;z-index:2;left:22px;right:18px;bottom:20px;color:#fff;font:500 11px 'JetBrains Mono',monospace;letter-spacing:.11em;text-shadow:0 2px 8px rgba(0,0,0,.4)}
-.work-moment-caption span{color:#F5B700;padding:0 5px}
-@media(max-width:700px){.work-moment-wrap{flex-basis:100%;min-height:250px}.work-moment-image{min-height:280px}}
-.hero-photo-wrap{width:min(190px,65%);aspect-ratio:4/5;margin:0 auto 8px;overflow:hidden;border:3px solid #F5B700;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.22);animation:photo-enter .8s cubic-bezier(.2,.8,.2,1) both}
-.hero-photo{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block;transition:transform .6s ease}
-.hero-photo-wrap:hover .hero-photo{transform:scale(1.045)}
-@keyframes photo-enter{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
-body x-dc section{animation:section-enter .65s ease both}
-@keyframes section-enter{from{opacity:.65;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-.site-nav a,.back-to-top,section a,button{transition:color .25s ease,background-color .25s ease,transform .25s ease,box-shadow .25s ease}
-section a:hover{transform:translateY(-2px)}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-
-.site-nav a[aria-current=location]{color:#0B6670!important;text-decoration:underline!important;text-underline-offset:6px}
-.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:#F5B700;z-index:9999}
-.back-to-top{position:fixed;right:20px;bottom:20px;z-index:9998;border:0;border-radius:4px;padding:12px 15px;background:#10222B;color:#F4F6F5;font:600 14px Inter,sans-serif;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:.2s ease}
-.back-to-top.visible{opacity:1;pointer-events:auto;transform:translateY(0)}
-@media(max-width:700px){.site-nav{gap:8px 14px!important;font-size:13px!important}.site-nav a{padding:5px 0}}
-@media print{.scroll-progress,.back-to-top{display:none!important}a{color:inherit!important;text-decoration:none!important}}
-</style>
-
-</helmet>
-
-<div style="background:#F4F6F5; color:#10222B; font-family:'Inter',system-ui,sans-serif; font-size:17px; line-height:1.6; display:flex; flex-direction:column; min-height:3400px">
-
-  <!-- Top bar -->
-  <header style="width:100%; box-sizing:border-box; padding:20px clamp(16px,4vw,40px)">
-    <div style="max-width:1160px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px 32px">
-      <div style="display:flex; align-items:center; gap:12px">
-        <img class="profile-logo" src="./assets/naim-hosen-profile.jpg" alt="Naim Hosen profile photo">
-        <span style="font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px">Naim Hosen</span>
-      </div>
-      <nav class="site-nav" aria-label="Sections" style="display:flex; flex-wrap:wrap; gap:8px 28px; font-size:15px; font-weight:500">
-        <a href="#about" style="color:#10222B; text-decoration:none">About</a>
-        <a href="#experience" style="color:#10222B; text-decoration:none">Experience</a>
-        <a href="#skills" style="color:#10222B; text-decoration:none">Skills</a>
-        <a href="#projects" style="color:#10222B; text-decoration:none">Projects</a>
-        <a href="#education" style="color:#10222B; text-decoration:none">Education</a>
-        <a href="#contact" style="color:#10222B; text-decoration:none">Contact</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="#home">
+        <img class="profile-logo" src="./assets/naim-hosen-profile.jpg" alt="Naim Hosen profile photo" width="52" height="52">
+        <span>Naim Hosen</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section style="width:100%; box-sizing:border-box; padding:48px clamp(16px,4vw,40px) 72px">
-    <div style="max-width:1160px; margin:0 auto; display:flex; flex-wrap:wrap; gap:48px; align-items:stretch">
-      <div style="flex:999 1 480px; min-width:0; display:flex; flex-direction:column; gap:24px; justify-content:center">
-        <p style="margin:0; font-family:'JetBrains Mono',monospace; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#4A5D66">Network operations · Fiber transmission · Growing into software engineering</p>
-        <h1 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(44px,8vw,96px); line-height:1; letter-spacing:-0.02em; text-wrap:balance">Naim Hosen</h1>
-        <p style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:500; font-size:clamp(20px,2.6vw,28px); line-height:1.3; color:#0B6670; text-wrap:balance">Team Leader, Implementation and Operation at Fiber@home Limited, Chattogram</p>
-        <p style="margin:0; max-width:60ch; color:#2C3F48">I lead the field and operations team that builds, tests and maintains fiber networks for ISP clients. I am now building a second career in software engineering: studying CSE and learning to automate and analyze the same network work I do every day.</p>
-        <div style="display:flex; flex-wrap:wrap; gap:12px; padding-top:8px">
-          <a href="mailto:naimhosen85@gmail.com" style="display:inline-flex; align-items:center; min-height:48px; padding:0 24px; background:#10222B; color:#F4F6F5; text-decoration:none; font-weight:600; border-radius:4px">Email me</a>
-          <a href="#experience" style="display:inline-flex; align-items:center; min-height:48px; padding:0 24px; border:1.5px solid #10222B; color:#10222B; text-decoration:none; font-weight:600; border-radius:4px">See my experience</a>
-        </div>
-      </div>
-
-      <div class="work-moment-wrap">
-        <img class="work-moment-image" src="./assets/network-operations-working-moment.png" alt="Illustrative professional working moment in a network operations and data analysis workspace">
-        <div class="work-moment-caption">NETWORK OPERATIONS <span>·</span> DATA ANALYSIS</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" style="width:100%; box-sizing:border-box; padding:0 clamp(16px,4vw,40px)">
-    <div style="max-width:1160px; margin:0 auto; border-top:1px solid #C5D0D4; padding:56px 0; display:flex; flex-wrap:wrap; gap:20px 48px">
-      <div style="flex:1 1 180px; min-width:0">
-        <p style="margin:0 0 10px; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#4A5D66">About me</p>
-        <h2 style="margin:0; font-family:'Space Grotesk',sans-serif; font-size:clamp(28px,4vw,38px); line-height:1.15">Professional Profile</h2>
-      </div>
-      <div style="flex:999 1 600px; min-width:0; display:flex; flex-direction:column; gap:28px">
-
-        <article style="border-left:4px solid #F5B700; padding:4px 0 4px 22px; display:flex; flex-direction:column; gap:12px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-size:23px; font-weight:600">Career Summary</h3>
-          <p style="margin:0; font-size:18px; line-height:1.7">Experienced Fiber Transmission and IT professional with practical knowledge of network infrastructure, fiber optic transmission, network implementation, maintenance, troubleshooting, and field operations management. Skilled in coordinating technical teams, monitoring network performance, resolving technical issues, and ensuring reliable connectivity. Alongside my professional experience, I am developing my knowledge in Software Engineering, programming, and data analysis to expand my technical capabilities.</p>
-        </article>
-
-        <article style="border-left:4px solid #0B6670; padding:4px 0 4px 22px; display:flex; flex-direction:column; gap:12px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-size:23px; font-weight:600">Career Objective</h3>
-          <p style="margin:0; color:#2C3F48; line-height:1.7">To build a successful career in Fiber Transmission, Network Operations, and IT Infrastructure by applying my practical technical experience and problem-solving skills. Additionally, I aim to develop my Software Engineering capabilities and explore modern technologies to contribute to innovative IT solutions.</p>
-        </article>
-
-        <article style="border-left:4px solid #10222B; padding:4px 0 4px 22px; display:flex; flex-direction:column; gap:16px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-size:23px; font-weight:600">Professional Knowledge</h3>
-          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr)); gap:18px 28px">
-            <div style="display:flex; flex-direction:column; gap:5px">
-              <h4 style="margin:0; font-size:16px; font-weight:600">Fiber Transmission</h4>
-              <p style="margin:0; color:#2C3F48; font-size:15px; line-height:1.6">Optical fiber networks, transmission equipment, implementation, maintenance, and troubleshooting.</p>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:5px">
-              <h4 style="margin:0; font-size:16px; font-weight:600">Network Infrastructure</h4>
-              <p style="margin:0; color:#2C3F48; font-size:15px; line-height:1.6">Routers, switches, OLT, ONU, ONT, SDH, DWDM, and IP-based networks.</p>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:5px">
-              <h4 style="margin:0; font-size:16px; font-weight:600">Network Operations</h4>
-              <p style="margin:0; color:#2C3F48; font-size:15px; line-height:1.6">Network monitoring, fault management, site surveys, and field team coordination.</p>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:5px">
-              <h4 style="margin:0; font-size:16px; font-weight:600">Technical Support</h4>
-              <p style="margin:0; color:#2C3F48; font-size:15px; line-height:1.6">IT support, incident management, troubleshooting, and problem-solving.</p>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:5px">
-              <h4 style="margin:0; font-size:16px; font-weight:600">Software Engineering <span style="font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:500; color:#0B6670">— SECONDARY FOCUS</span></h4>
-              <p style="margin:0; color:#2C3F48; font-size:15px; line-height:1.6">Programming fundamentals, software development concepts, and application development.</p>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:5px">
-              <h4 style="margin:0; font-size:16px; font-weight:600">Data Analysis</h4>
-              <p style="margin:0; color:#2C3F48; font-size:15px; line-height:1.6">Data handling, data visualization, analytical tools, and workflow automation.</p>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience" style="width:100%; box-sizing:border-box; padding:0 clamp(16px,4vw,40px)">
-    <div style="max-width:1160px; margin:0 auto; border-top:1px solid #C5D0D4; padding:48px 0; display:flex; flex-wrap:wrap; gap:16px 48px">
-      <h2 style="flex:1 1 180px; min-width:0; margin:0; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#4A5D66">Work experience</h2>
-      <div style="flex:999 1 480px; min-width:0; display:flex; flex-direction:column; gap:56px">
-
-        <article style="display:flex; flex-direction:column; gap:16px">
-          <header style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:4px 24px">
-            <div>
-              <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:26px; line-height:1.2">Team Leader, Implementation and Operation</h3>
-              <p style="margin:4px 0 0; color:#0B6670; font-weight:600">Fiber@home Limited</p>
-            </div>
-            <p style="margin:0; font-family:'JetBrains Mono',monospace; font-size:14px; background:#F5B700; padding:2px 10px; border-radius:3px">Dec 2016 – Present</p>
-          </header>
-          <ul style="margin:0; padding-left:20px; display:flex; flex-direction:column; gap:8px; max-width:68ch; color:#2C3F48">
-            <li>Lead the implementation and operations team across project rollouts, troubleshooting (TT) and day-to-day field work.</li>
-            <li>Keep the working database up to date and report on it every day.</li>
-            <li>Carry out site surveys and deliver written survey reports.</li>
-            <li>Work with clients and vendors on site improvements and maintenance.</li>
-            <li>Coordinate with other teams to answer requirement queries.</li>
-            <li>Maintain all kinds of transmission equipment.</li>
-            <li>Work hands-on with switches, routers, SDH Mux and DWDM networks, plus ISP-side OLT, ONU and splitters on GPON and EPON, using OTDR, optical power meters and splicing machines.</li>
-          </ul>
-        </article>
-
-        <article style="display:flex; flex-direction:column; gap:16px">
-          <header style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:4px 24px">
-            <div>
-              <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:26px; line-height:1.2">Support Engineer, Support Desk and Call Center (NOC)</h3>
-              <p style="margin:4px 0 0; color:#0B6670; font-weight:600">DDN ISP BD, Chattogram</p>
-            </div>
-            <p style="margin:0; font-family:'JetBrains Mono',monospace; font-size:14px; border:1px solid #10222B; padding:2px 10px; border-radius:3px">Part time</p>
-          </header>
-          <ul style="margin:0; padding-left:20px; display:flex; flex-direction:column; gap:8px; max-width:68ch; color:#2C3F48">
-            <li>Managed the field team to keep performance on target.</li>
-            <li>Delivered network plans on deadline by scheduling the available fiber teams.</li>
-            <li>Configured, installed and troubleshot client-end routers and access points.</li>
-            <li>Monitored, tuned and reported on network performance.</li>
-            <li>Submitted a daily work report to the reporting supervisor.</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" style="width:100%; box-sizing:border-box; padding:0 clamp(16px,4vw,40px)">
-    <div style="max-width:1160px; margin:0 auto; border-top:1px solid #C5D0D4; padding:48px 0; display:flex; flex-wrap:wrap; gap:16px 48px">
-      <h2 style="flex:1 1 180px; min-width:0; margin:0; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#4A5D66">Technical skills</h2>
-      <div style="flex:999 1 480px; min-width:0; display:flex; flex-wrap:wrap; gap:36px 40px">
-
-        <div style="flex:1 1 260px; min-width:0; display:flex; flex-direction:column; gap:12px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px">Transmission and access</h3>
-          <ul style="margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:8px">
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">SDH Mux</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">DWDM</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">GPON</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">EPON</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">OLT</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">ONU</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Splitters</li>
-          </ul>
-        </div>
-
-        <div style="flex:1 1 260px; min-width:0; display:flex; flex-direction:column; gap:12px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px">Testing and splicing</h3>
-          <ul style="margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:8px">
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">OTDR</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Optical power meter</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Splicing machines</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Site surveys</li>
-          </ul>
-        </div>
-
-        <div style="flex:1 1 260px; min-width:0; display:flex; flex-direction:column; gap:12px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px">Networking and IT</h3>
-          <ul style="margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:8px">
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Switches</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Routers</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Access points</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">NOC monitoring</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">CCNA training</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">IT support</li>
-          </ul>
-        </div>
-
-        <div style="flex:1 1 260px; min-width:0; display:flex; flex-direction:column; gap:12px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px">Office and reporting</h3>
-          <ul style="margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:8px">
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">MS Word</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">MS Excel</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">PowerPoint</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Email and daily reporting</li>
-          </ul>
-        </div>
-
-        <div style="flex:1 1 260px; min-width:0; display:flex; flex-direction:column; gap:12px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px">Building toward software engineering</h3>
-          <ul style="margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:8px">
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Web development</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Software development</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Data analysis</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Machine learning</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px solid #9FB0B6; padding:5px 11px; border-radius:3px">Artificial intelligence</li>
-            <li style="font-family:'JetBrains Mono',monospace; font-size:13px; border:1px dashed #10222B; padding:5px 11px; border-radius:3px">[ADD THE LANGUAGES YOU USE]</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" style="width:100%; box-sizing:border-box; padding:0 clamp(16px,4vw,40px)">
-    <div style="max-width:1160px; margin:0 auto; border-top:1px solid #C5D0D4; padding:48px 0; display:flex; flex-wrap:wrap; gap:16px 48px">
-      <h2 style="flex:1 1 180px; min-width:0; margin:0; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#4A5D66">Projects and learning path</h2>
-      <div style="flex:999 1 480px; min-width:0; display:flex; flex-wrap:wrap; gap:20px">
-
-        <article style="flex:1 1 320px; min-width:0; box-sizing:border-box; border:1.5px solid #10222B; border-radius:4px; padding:24px; display:flex; flex-direction:column; gap:14px">
-          <p style="margin:0; align-self:flex-start; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; background:#F5B700; padding:2px 8px; border-radius:3px">Live · Web development</p>
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:22px; line-height:1.2">This Portfolio Website</h3>
-          <p style="margin:0; color:#2C3F48">Designed and published to present my network, fiber and software work in one place. Built with an AI design assistant.</p>
-        </article>
-
-        <article style="flex:1 1 320px; min-width:0; box-sizing:border-box; border:1.5px solid #10222B; border-radius:4px; padding:24px; display:flex; flex-direction:column; gap:14px">
-          <p style="margin:0; align-self:flex-start; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; border:1px solid #10222B; padding:1px 7px; border-radius:3px">Planned · Software</p>
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:22px; line-height:1.2">Daily Report Automation</h3>
-          <p style="margin:0; color:#2C3F48">Turn the daily operations report I already write into a script or spreadsheet that fills itself from the working database, so reporting takes less time.</p>
-        </article>
-
-        <article style="flex:1 1 320px; min-width:0; box-sizing:border-box; border:1.5px solid #10222B; border-radius:4px; padding:24px; display:flex; flex-direction:column; gap:14px">
-          <p style="margin:0; align-self:flex-start; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; border:1px solid #10222B; padding:1px 7px; border-radius:3px">Planned · Data analysis</p>
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:22px; line-height:1.2">Trouble-Ticket Analysis</h3>
-          <p style="margin:0; color:#2C3F48">Study past trouble tickets for repeat faults, common causes and repair times, then show them in a simple dashboard for the team.</p>
-        </article>
-
-        <article style="flex:1 1 320px; min-width:0; box-sizing:border-box; border:1.5px solid #10222B; border-radius:4px; padding:24px; display:flex; flex-direction:column; gap:14px">
-          <p style="margin:0; align-self:flex-start; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; border:1px solid #10222B; padding:1px 7px; border-radius:3px">Later · Machine learning</p>
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:22px; line-height:1.2">Fault Pattern Model</h3>
-          <p style="margin:0; color:#2C3F48">Once the ticket data is clean, test a simple model that shows which links or sites fail again and again. A learning project, not a production tool.</p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Education and training -->
-  <section id="education" style="width:100%; box-sizing:border-box; padding:0 clamp(16px,4vw,40px)">
-    <div style="max-width:1160px; margin:0 auto; border-top:1px solid #C5D0D4; padding:48px 0; display:flex; flex-wrap:wrap; gap:16px 48px">
-      <h2 style="flex:1 1 180px; min-width:0; margin:0; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#4A5D66">Education and training</h2>
-      <div style="flex:999 1 480px; min-width:0; display:flex; flex-direction:column; gap:48px">
-
-        <div style="display:flex; flex-direction:column; gap:0">
-          <div style="display:flex; flex-wrap:wrap; gap:4px 24px; padding:20px 0; border-bottom:1px solid #D7DFE1">
-            <p style="flex:0 0 130px; margin:0; font-family:'JetBrains Mono',monospace; font-size:14px; color:#4A5D66">In progress</p>
-            <div style="flex:1 1 280px; min-width:0">
-              <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px">B.Sc. in Computer Science and Engineering</h3>
-              <p style="margin:2px 0 0; color:#2C3F48">Port City International University</p>
-            </div>
-          </div>
-          <div style="display:flex; flex-wrap:wrap; gap:4px 24px; padding:20px 0; border-bottom:1px solid #D7DFE1">
-            <p style="flex:0 0 130px; margin:0; font-family:'JetBrains Mono',monospace; font-size:14px; color:#4A5D66">2023</p>
-            <div style="flex:1 1 280px; min-width:0">
-              <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px">Diploma in Engineering, Computer Technology</h3>
-              <p style="margin:2px 0 0; color:#2C3F48">Daffodil Institute of IT · CGPA 3.82 out of 4.00</p>
-            </div>
-          </div>
-          <div style="display:flex; flex-wrap:wrap; gap:4px 24px; padding:20px 0; border-bottom:1px solid #D7DFE1">
-            <p style="flex:0 0 130px; margin:0; font-family:'JetBrains Mono',monospace; font-size:14px; color:#4A5D66">2015</p>
-            <div style="flex:1 1 280px; min-width:0">
-              <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px">Higher Secondary Certificate (H.S.C.)</h3>
-              <p style="margin:2px 0 0; color:#2C3F48">Humanities · Madrasah Board · GPA 5.00</p>
-            </div>
-          </div>
-          <div style="display:flex; flex-wrap:wrap; gap:4px 24px; padding:20px 0; border-bottom:1px solid #D7DFE1">
-            <p style="flex:0 0 130px; margin:0; font-family:'JetBrains Mono',monospace; font-size:14px; color:#4A5D66">2013</p>
-            <div style="flex:1 1 280px; min-width:0">
-              <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px">Secondary School Certificate (S.S.C.)</h3>
-              <p style="margin:2px 0 0; color:#2C3F48">Humanities · Madrasah Board · GPA 5.00</p>
-            </div>
-          </div>
-        </div>
-
-        <div style="display:flex; flex-direction:column; gap:16px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:22px">Professional training</h3>
-          <div style="display:flex; flex-wrap:wrap; gap:16px">
-            <div style="flex:1 1 260px; min-width:0; border:1.5px solid #10222B; border-radius:4px; padding:20px">
-              <p style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px">CCNA</p>
-              <p style="margin:4px 0 0; color:#2C3F48">DDN ISP BD, Chowkbazar, Chattogram</p>
-              <p style="margin:8px 0 0; font-family:'JetBrains Mono',monospace; font-size:13px; color:#4A5D66">4 months</p>
-            </div>
-            <div style="flex:1 1 260px; min-width:0; border:1.5px solid #10222B; border-radius:4px; padding:20px">
-              <p style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px">IT Support Technical</p>
-              <p style="margin:4px 0 0; color:#2C3F48">DDN ISP BD, Chowkbazar, Chattogram</p>
-              <p style="margin:8px 0 0; font-family:'JetBrains Mono',monospace; font-size:13px; color:#4A5D66">4 months</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Strengths -->
-  <section id="strengths" style="width:100%; box-sizing:border-box; padding:0 clamp(16px,4vw,40px)">
-    <div style="max-width:1160px; margin:0 auto; border-top:1px solid #C5D0D4; padding:48px 0; display:flex; flex-wrap:wrap; gap:16px 48px">
-      <h2 style="flex:1 1 180px; min-width:0; margin:0; font-family:'JetBrains Mono',monospace; font-weight:500; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#4A5D66">Strengths and languages</h2>
-      <div style="flex:999 1 480px; min-width:0; display:flex; flex-wrap:wrap; gap:32px 40px">
-        <div style="flex:1 1 300px; min-width:0; display:flex; flex-direction:column; gap:12px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px">How I work</h3>
-          <p style="margin:0; color:#2C3F48; max-width:60ch">Energetic and confident under pressure. A quick learner who is honest, dependable and committed to the job. I work well with all kinds of people across teams and organizations, take direction well, and can guide others when needed.</p>
-        </div>
-        <div style="flex:1 1 220px; min-width:0; display:flex; flex-direction:column; gap:12px">
-          <h3 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:19px">Languages</h3>
-          <p style="margin:0; color:#2C3F48">Bengali and English, spoken and written.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" style="width:100%; box-sizing:border-box; padding:0 clamp(16px,4vw,40px) 72px">
-    <div style="max-width:1160px; margin:0 auto; background:#F5B700; border-radius:6px; padding:clamp(28px,5vw,56px); display:flex; flex-wrap:wrap; gap:32px 48px; align-items:flex-end; justify-content:space-between; box-sizing:border-box">
-      <div style="flex:1 1 320px; min-width:0; display:flex; flex-direction:column; gap:12px">
-        <h2 style="margin:0; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:clamp(30px,4.5vw,48px); line-height:1.1; letter-spacing:-0.01em; text-wrap:balance">Let's connect professionally.</h2>
-        <p style="margin:0; max-width:58ch">Open to professional opportunities and collaboration in Fiber Transmission, Network Engineering, Network Operations, and IT Infrastructure. I also have a growing interest in Software Engineering, Web Application Development, and Data Analysis.</p>
-      </div>
-      <dl style="flex:1 1 280px; min-width:0; margin:0; display:flex; flex-direction:column; gap:18px">
+  <main id="home">
+    <section class="hero">
+      <div class="wrap hero-grid">
         <div>
-          <dt style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase">Email</dt>
-          <dd style="margin:2px 0 0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px; overflow-wrap:anywhere"><a href="mailto:naimhosen85@gmail.com" style="color:inherit;text-decoration:none">naimhosen85@gmail.com</a></dd>
+          <p class="eyebrow">Telecom & networking professional · Fiber transmission · Software development · Data science</p>
+          <h1>Naim Hosen</h1>
+          <p class="headline">Team Leader, Implementation and Operation at Fiber@home Limited, Chattogram</p>
+          <p class="intro">I am a telecom and networking professional with nearly 10 years of experience in fiber transmission, network implementation, and operations. I lead field and operations work for ISP connectivity. Alongside my professional career, I am studying Computer Science and Engineering and developing skills in software development, data analysis, and machine learning.</p>
+          <div class="actions"><a class="button" href="mailto:naimhosen85@gmail.com">Email me</a><a class="button secondary" href="#experience">See my experience</a></div>
         </div>
+        <div class="work-moment">
+          <img src="./assets/network-operations-working-moment.png" alt="Network operations and data analysis workspace" loading="eager">
+          <div class="work-caption">NETWORK OPERATIONS <span>·</span> DATA ANALYSIS</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="about">
+      <div class="wrap section-grid">
+        <div><p class="section-title">About me</p><h2 class="section-heading">Professional Profile</h2></div>
+        <div class="stack">
+          <article class="panel"><h3>Career Summary</h3><p>Experienced Fiber Transmission and IT professional with practical knowledge of network infrastructure, fiber optic transmission, network implementation, maintenance, troubleshooting, and field operations management. Skilled in coordinating technical teams, monitoring network performance, resolving technical issues, and ensuring reliable connectivity. Alongside my professional experience, I am developing my knowledge in Software Engineering, programming, and data analysis.</p></article>
+          <article class="panel teal"><h3>Career Objective</h3><p>To build a successful career in Fiber Transmission, Network Operations, and IT Infrastructure by applying my practical technical experience and problem-solving skills. Additionally, I aim to develop my Software Engineering capabilities and explore modern technologies to contribute to innovative IT solutions.</p></article>
+          <article class="panel dark"><h3>Professional Knowledge</h3><div class="knowledge-grid">
+            <div><h4>Fiber Transmission</h4><p>Optical fiber networks, transmission equipment, implementation, maintenance, and troubleshooting.</p></div>
+            <div><h4>Network Infrastructure</h4><p>Routers, switches, OLT, ONU, ONT, SDH, DWDM, and IP-based networks.</p></div>
+            <div><h4>Network Operations</h4><p>Network monitoring, fault management, site surveys, and field team coordination.</p></div>
+            <div><h4>Technical Support</h4><p>IT support, incident management, troubleshooting, and problem-solving.</p></div>
+            <div><h4>Software Engineering</h4><p>Programming fundamentals, software development concepts, and application development.</p></div>
+            <div><h4>Data Analysis</h4><p>Data handling, data visualization, analytical tools, and workflow automation.</p></div>
+          </div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="experience">
+      <div class="wrap section-grid">
+        <div><p class="section-title">Work experience</p></div>
+        <div class="experience-list">
+          <article>
+            <div class="job-head"><div><h3>Team Leader, Implementation and Operation</h3><p class="company">Fiber@home Limited</p></div><span class="date">Dec 2016 – Present</span></div>
+            <ul class="details">
+              <li>Lead the implementation and operations team across project rollouts, troubleshooting (TT), and day-to-day field work.</li>
+              <li>Keep the working database up to date and report on it every day.</li>
+              <li>Carry out site surveys and deliver written survey reports.</li>
+              <li>Work with clients and vendors on site improvements and maintenance.</li>
+              <li>Coordinate with other teams to answer requirement queries.</li>
+              <li>Maintain transmission equipment.</li>
+              <li>Work hands-on with switches, routers, SDH Mux and DWDM networks, plus ISP-side OLT, ONU and splitters on GPON and EPON, using OTDR, optical power meters and splicing machines.</li>
+            </ul>
+          </article>
+          <article>
+            <div class="job-head"><div><h3>Support Engineer, Support Desk and Call Center (NOC)</h3><p class="company">DDN ISP BD, Chattogram</p></div><span class="date">Part time</span></div>
+            <ul class="details">
+              <li>Managed the field team to keep performance on target.</li>
+              <li>Delivered network plans on deadline by scheduling available fiber teams.</li>
+              <li>Configured, installed, and troubleshot client-end routers and access points.</li>
+              <li>Monitored, tuned, and reported on network performance.</li>
+              <li>Submitted a daily work report to the reporting supervisor.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="skills">
+      <div class="wrap section-grid">
+        <div><p class="section-title">Technical skills</p></div>
+        <div class="skill-grid">
+          <div class="skill-group"><h3>Transmission and access</h3><ul class="tags"><li>SDH Mux</li><li>DWDM</li><li>GPON</li><li>EPON</li><li>OLT</li><li>ONU</li><li>Splitters</li></ul></div>
+          <div class="skill-group"><h3>Testing and splicing</h3><ul class="tags"><li>OTDR</li><li>Optical power meter</li><li>Splicing machines</li><li>Site surveys</li></ul></div>
+          <div class="skill-group"><h3>Networking and IT</h3><ul class="tags"><li>Switches</li><li>Routers</li><li>Access points</li><li>NOC monitoring</li><li>CCNA training</li><li>IT support</li></ul></div>
+          <div class="skill-group"><h3>Office and reporting</h3><ul class="tags"><li>MS Word</li><li>MS Excel</li><li>PowerPoint</li><li>Email and daily reporting</li></ul></div>
+          <div class="skill-group"><h3>Software and data — developing</h3><ul class="tags"><li>Python</li><li>React</li><li>Web development</li><li>Software development</li><li>Data analysis</li><li>Machine learning</li><li>Artificial intelligence</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="projects">
+      <div class="wrap section-grid">
+        <div><p class="section-title">Projects and learning path</p></div>
+        <div class="project-grid">
+          <article class="project"><span class="status">Live · Web development</span><h3>This Portfolio Website</h3><p>Designed and published to present my network, fiber, and software work in one place.</p></article>
+          <article class="project"><span class="status planned">Planned · Software</span><h3>Daily Report Automation</h3><p>Turn daily operations reporting into a script or spreadsheet that can reduce repetitive work.</p></article>
+          <article class="project"><span class="status planned">Planned · Data analysis</span><h3>Trouble-Ticket Analysis</h3><p>Study past trouble tickets for repeat faults, common causes, and repair times, then present insights in a dashboard.</p></article>
+          <article class="project"><span class="status planned">Later · Machine learning</span><h3>Fault Pattern Model</h3><p>Explore a model that identifies recurring link or site failures as a learning project, not a production tool.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="education">
+      <div class="wrap section-grid">
+        <div><p class="section-title">Education and training</p></div>
         <div>
-          <dt style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase">Phone</dt>
-          <dd style="margin:2px 0 0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px"><a href="tel:+8801610080102" style="color:inherit;text-decoration:none">+880 1610-080102</a></dd>
+          <div class="edu-row"><span class="edu-year">In progress</span><div><h3>B.Sc. in Computer Science and Engineering</h3><p>Port City International University</p></div></div>
+          <div class="edu-row"><span class="edu-year">2023</span><div><h3>Diploma in Engineering, Computer Technology</h3><p>Daffodil Institute of IT · CGPA 3.82 out of 4.00</p></div></div>
+          <div class="edu-row"><span class="edu-year">2015</span><div><h3>Higher Secondary Certificate (H.S.C.)</h3><p>Humanities · Madrasah Board · GPA 5.00</p></div></div>
+          <div class="edu-row"><span class="edu-year">2013</span><div><h3>Secondary School Certificate (S.S.C.)</h3><p>Humanities · Madrasah Board · GPA 5.00</p></div></div>
+          <h3 style="margin:34px 0 12px">Professional training</h3>
+          <div class="training-grid">
+            <article class="training"><h4>CCNA</h4><p>DDN ISP BD, Chowkbazar, Chattogram</p><small>4 months</small></article>
+            <article class="training"><h4>IT Support Technical</h4><p>DDN ISP BD, Chowkbazar, Chattogram</p><small>4 months</small></article>
+          </div>
         </div>
-        <div>
-          <dt style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase">Facebook</dt>
-          <dd style="margin:2px 0 0; font-family:'Space Grotesk',sans-serif; font-weight:600; font-size:20px; overflow-wrap:anywhere"><a href="https://www.facebook.com/share/1FTcwghkBi/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:underline;text-underline-offset:4px">Visit my Facebook profile</a></dd>
+      </div>
+    </section>
+
+    <section class="content-section" id="strengths">
+      <div class="wrap section-grid">
+        <div><p class="section-title">Strengths and languages</p></div>
+        <div class="knowledge-grid">
+          <div><h3>How I work</h3><p>Energetic and confident under pressure. A quick learner who is honest, dependable, and committed to the job. I work well with people across teams and organizations, take direction well, and can guide others when needed.</p></div>
+          <div><h3>Languages</h3><p>Bengali and English, spoken and written.</p></div>
         </div>
-      </dl>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <footer style="width:100%; box-sizing:border-box; padding:0 clamp(16px,4vw,40px) 40px">
-    <div style="max-width:1160px; margin:0 auto; border-top:1px solid #C5D0D4; padding-top:20px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 24px; font-size:14px; color:#4A5D66">
-      <span>Naim Hosen · Fiber transmission, network operations and IT support · Chattogram, Bangladesh</span>
-      <span style="font-family:'JetBrains Mono',monospace">Updated November 2026</span>
-    </div>
-  </footer>
+    <section class="wrap" id="contact" style="padding-top:28px;padding-bottom:64px">
+      <div class="contact">
+        <div><h2>Let's connect professionally.</h2><p>Open to professional opportunities and collaboration in Fiber Transmission, Network Engineering, Network Operations, and IT Infrastructure. I also have a growing interest in Software Engineering, Web Application Development, and Data Analysis.</p></div>
+        <dl class="contact-list">
+          <div><dt>Email</dt><dd><a href="mailto:naimhosen85@gmail.com">naimhosen85@gmail.com</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+8801610080102">+880 1610-080102</a></dd></div>
+          <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/share/1FTcwghkBi/" target="_blank" rel="noopener noreferrer">Visit my Facebook profile</a></dd></div>
+          <div><dt>GitHub</dt><dd><a href="https://github.com/naimhosen19" target="_blank" rel="noopener noreferrer">github.com/naimhosen19</a></dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
 
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":3400}}'>
-class Component extends DCLogic {
-renderVals() {
-return {};
-}
-}
-</script>
+  <footer><div class="wrap footer-inner"><span>Naim Hosen · Telecom, fiber transmission, network operations and IT · Chattogram, Bangladesh</span><span>Updated November 2026</span></div></footer>
+  <button class="back-to-top" type="button" aria-label="Back to top">↑ Top</button>
 
-<div class="scroll-progress" aria-hidden="true"></div>
-<button class="back-to-top" type="button" aria-label="Back to top">↑ Top</button>
-<script>
-(function(){
- const bar=document.querySelector('.scroll-progress');
- const btn=document.querySelector('.back-to-top');
- const links=[...document.querySelectorAll('.site-nav a[href^="#"]')];
- const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
- function update(){
-   const max=document.documentElement.scrollHeight-innerHeight;
-   if(bar)bar.style.width=(max>0?scrollY/max*100:0)+'%';
-   if(btn)btn.classList.toggle('visible',scrollY>500);
-   let active='';
-   sections.forEach(s=>{if(s.getBoundingClientRect().top<=150)active='#'+s.id});
-   links.forEach(a=>a.getAttribute('href')===active?a.setAttribute('aria-current','location'):a.removeAttribute('aria-current'));
- }
- addEventListener('scroll',update,{passive:true});
- addEventListener('resize',update);
- if(btn)btn.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
- update();
-})();
-</script>
-
+  <script>
+    (function(){
+      const bar=document.querySelector('.scroll-progress');
+      const btn=document.querySelector('.back-to-top');
+      const links=[...document.querySelectorAll('.site-nav a[href^="#"]')];
+      const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+      function update(){
+        const max=document.documentElement.scrollHeight-window.innerHeight;
+        if(bar)bar.style.width=(max>0?window.scrollY/max*100:0)+'%';
+        if(btn)btn.classList.toggle('visible',window.scrollY>500);
+        let active='';
+        sections.forEach(s=>{if(s.getBoundingClientRect().top<=150)active='#'+s.id;});
+        links.forEach(a=>a.getAttribute('href')===active?a.setAttribute('aria-current','location'):a.removeAttribute('aria-current'));
+      }
+      window.addEventListener('scroll',update,{passive:true});
+      window.addEventListener('resize',update);
+      if(btn)btn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+      update();
+    })();
+  </script>
 </body>
 </html>
